@@ -20,8 +20,9 @@ def main():
     cap_out = cv2.VideoWriter(video_out_path, cv2.VideoWriter_fourcc(*'mp4v'), cap.get(cv2.CAP_PROP_FPS),
                              (frame.shape[1], frame.shape[0]))
     
-    # List to track employee tags
-    tracker_list = []
+    # List to track employee tags, frames and coordinates
+    tracker_list, frame_list, coord_list = [], [], []
+    frame_count = 0
     
     # Threshold for employee tag detection
     detection_threshold = 0.5
@@ -35,6 +36,7 @@ def main():
         
         # Grab frame
         frame = result.orig_img
+        frame_count += 1
 
         # Detect Employee Tags
         tag_result = model_2(frame)[0]
@@ -82,6 +84,11 @@ def main():
                     if i[2] == j[4]:
                         x1, y1, x2, y2, id, conf, class_id = j
                         cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 4)
+                        
+                        # Append frame & coordinates list
+                        frame_list.append(frame_count)
+                        x3, y3 = get_middle_coords(x1, y1, x2, y2)
+                        coord_list.append((x3, y3))
 
                         # Append Employee Tag Tracking list
                         tracker_list.append(i[2])
@@ -94,6 +101,11 @@ def main():
                         x1, y1, x2, y2, id, conf, class_id = j
                         cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 4)
 
+                        # Append frame & coordinates list
+                        frame_list.append(frame_count)
+                        x3, y3 = get_middle_coords(x1, y1, x2, y2)
+                        coord_list.append((x3, y3))
+
         # Display frame
         # cv2.imshow("frame", frame)
 
@@ -105,6 +117,9 @@ def main():
     
     cap_out.release()
     cv2.destroyAllWindows()
+
+    print('Frames: \n', frame_list)
+    print('Coordinates: \n', coord_list)
 
 if __name__ == "__main__":
     main()
