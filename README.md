@@ -84,7 +84,8 @@ Frame and Coordinates Output:
 
 Video Output:
 ![](https://drive.google.com/uc?export=view&id=1fEPtGWw-LljcSgwWDkmBKq8z-5KSfdlN)
-<iframe src="https://drive.google.com/file/d/1TNfsRKRm30Mr7YUzkcRJZuorl0516IVe/preview" width="640" height="480" allow="autoplay"></iframe>
+<!-- <iframe src="https://drive.google.com/file/d/1TNfsRKRm30Mr7YUzkcRJZuorl0516IVe/preview" width="640" height="480" allow="autoplay"></iframe> -->
+[<img src="https://drive.google.com/uc?export=view&id=1fEPtGWw-LljcSgwWDkmBKq8z-5KSfdlN" width="50%">](https://drive.google.com/file/d/1TNfsRKRm30Mr7YUzkcRJZuorl0516IVe/preview "Now in Android: 55")
 
 ## Future Work
 
