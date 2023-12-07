@@ -52,7 +52,7 @@ This project aims to develop a YOLOv8 model to recognize employees based on thei
 
 Files
 ```
-https://github.com/NigelGoh16/Tag_Identification/tree/master
+git clone https://github.com/NigelGoh16/Tag_Identification.git
 ```
 
 Dependencies installation:
