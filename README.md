@@ -79,8 +79,8 @@ For custom data:
 ## Output Example
 
 Frame and Coordinates Output:
-https://drive.google.com/uc?export=view&id=1fasRg9YScCreGU6TzIEwagLmCT-Wnp6K
-https://drive.google.com/uc?export=view&id=16MJ8jLmZZRnRf2xYQQoB7lJZ6kyG3E1e
+(https://drive.google.com/uc?export=view&id=1fasRg9YScCreGU6TzIEwagLmCT-Wnp6K)
+![](https://drive.google.com/uc?export=view&id=16MJ8jLmZZRnRf2xYQQoB7lJZ6kyG3E1e)
 
 Video Output:
 https://drive.google.com/uc?export=view&id=1fEPtGWw-LljcSgwWDkmBKq8z-5KSfdlN
