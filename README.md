@@ -30,7 +30,7 @@ This project aims to develop a YOLOv8 model to recognize employees based on thei
 
 1. Video Input:
 
-    The video is 
+    The video is loaded for model inference.
 
 2. Model Inference:
 
@@ -51,30 +51,30 @@ This project aims to develop a YOLOv8 model to recognize employees based on thei
 ## Installation & Usage
 
 Files
-'''
+```
 https://github.com/NigelGoh16/Tag_Identification/tree/master
-'''
+```
 
 Dependencies installation:
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 To run the script to execute the employee tag detection:
-'''
+```
 python main.py
-'''
+```
 
 ### Custom Data
 
 For custom models:
     
-    Any models can be retrained with your own custom data in the Tag_Identification.ipynb notebook.
+Any models can be retrained with your own custom data in the Tag_Identification.ipynb notebook.
 
 For custom data:
 
-    New data can be processed through the python main.py
-    (Note: Update the video paths before processing any new data)
+New data can be processed through the python main.py
+(Note: Update the video paths before processing any new data)
 
 ## Output Example
 
@@ -87,10 +87,7 @@ Video Output:
 
 ## Future Work
 
-There are several known limitations to this approach in which are:
+There are known limitations to this approach in which are:
 
 1. The tracking of the employee is refreshed everytime a new tag is detected.
 This is alright with 1 employee however when considering multiple employees, whenever a new employee tag is detected and the prior employee being tracked with his tag no longer visible will not be tracked anymore.
-
-2. The tracking id of the employee is reassigned 
-
