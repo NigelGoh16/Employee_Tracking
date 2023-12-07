@@ -69,7 +69,7 @@ python main.py
 
 For custom models:
     
-Any models can be retrained with your own custom data in the Tag_Identification.ipynb notebook.
+Any models can be retrained with your own custom data in the Model_Training.ipynb notebook.
 
 For custom data:
 
